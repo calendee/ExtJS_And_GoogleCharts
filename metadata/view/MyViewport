@@ -1,0 +1,111 @@
+{
+    "type": "viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyViewport",
+        "designer|initialView": true
+    },
+    "id": "ExtBox1-ext-gen9004",
+    "designerId": "2f140e0c-3522-48b1-b987-8536de83332b",
+    "cn": [
+        {
+            "type": "panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyPanel",
+                "id": "chartPanel",
+                "itemId": "chartPanel",
+                "title": "My Panel"
+            },
+            "designerId": "832498e0-f81e-4351-97a7-e7afffc508e5",
+            "cn": [
+                {
+                    "type": "toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "top",
+                        "designer|userClassName": "MyToolbar"
+                    },
+                    "designerId": "71e0ac1c-c5bf-4d5a-9778-825715854677",
+                    "cn": [
+                        {
+                            "type": "button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "designer|userClassName": "MyButton",
+                                "text": "MyButton"
+                            },
+                            "designerId": "a784637b-5a81-4dd3-8aa9-90dbda7ebef8",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "onButtonClick",
+                                        "fn": "onButtonClick",
+                                        "implHandler": [
+                                            "        var dataStore = Ext.getStore('UtilizationStore');",
+                                            "",
+                                            "        console.log(dataStore);",
+                                            "",
+                                            "        var chartModel = dataStore.getRange();",
+                                            "",
+                                            "",
+                                            "        console.log('Chart Model');",
+                                            "        console.log(chartModel);",
+                                            "",
+                                            "",
+                                            "        chartData = chartModel[0];;",
+                                            "",
+                                            "",
+                                            "",
+                                            "        console.log(chartData.getData().data);"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "designerId": "df161eb5-751c-4927-bed3-76ab7e7d8ace"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyContainer",
+                        "id": "chartHolder",
+                        "itemId": "chartHolder"
+                    },
+                    "designerId": "3bed74d6-2d1e-4cfd-ae1d-3d3ced45f1f0"
+                }
+            ]
+        }
+    ]
+}

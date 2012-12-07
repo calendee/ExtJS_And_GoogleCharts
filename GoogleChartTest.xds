@@ -1,0 +1,58 @@
+{
+    "name": "GoogleChartTest",
+    "settings": {
+        "urlPrefix": "GoogleChartTest",
+        "spacesToIndent": 4,
+        "exportPath": "",
+        "sdkPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.1.0",
+    "xdsBuild": 676,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000498,
+    "framework": "ext41",
+    "topInstanceFileMap": {
+        "ab9a09a7-bde4-4576-b0b9-fc9b63c5e5dc": {
+            "paths": [
+                "metadata/store/UtilizationStore",
+                "app/store/override/UtilizationStore.js",
+                "app/store/UtilizationStore.js"
+            ],
+            "className": "UtilizationStore"
+        },
+        "8a7e54c8-acbc-43ca-9fb7-578a5d75cdb5": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "2f140e0c-3522-48b1-b987-8536de83332b": {
+            "paths": [
+                "metadata/view/MyViewport",
+                "app/view/override/MyViewport.js",
+                "app/view/MyViewport.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "MyViewport"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "2f140e0c-3522-48b1-b987-8536de83332b"
+        ],
+        "store": [
+            "ab9a09a7-bde4-4576-b0b9-fc9b63c5e5dc"
+        ],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "8a7e54c8-acbc-43ca-9fb7-578a5d75cdb5"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
